@@ -1,0 +1,221 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodEch</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+          <div class="log0">
+            <div class="logo_main">
+       
+               <div class="logo_text"></div>
+               <div class="logo_img">
+                <img src="https://foodwill.net/wp-content/uploads/2017/10/logo-foodech.png" alt="">
+               </div>
+            </div>
+            <div class="logo_right">
+               
+            <div class="header_buttons">
+                <a href="" traget="_blank">Всі товари</a>
+                <a href="" traget="_blank">Про нас</a>
+                <a href="" traget="_blank">Відгуки</a>
+                <img class="basket_img" src="https://cdn-icons-png.freepik.com/512/7835/7835563.png" alt="">
+                <a class="basket_count action-button" href="" traget="_blank" onclick="checkout()">Придбати</a>
+                <a class="basket_count action-button" href="" traget="_blank" onclick="resetCart()">Скинути</a>
+
+              </div>
+              <div class="slogo">
+                <h3>Найкращий вибір їжі!</h3>
+            </div>
+              <div class="slogo total-price">
+                <h3>Загальна вартість: <span id="total">0 </span>грн</h3>
+            </div>
+        </div>
+        </div>
+                 </header>
+        <main>
+         
+           <h1>Всі товари</h1>
+            <section class="all_items">
+            
+            <div class="item_fastfood item orange">
+            <img class="item_img" src="https://naked-science.ru/wp-content/uploads/2016/06/field_image_fastfood_00.jpg" alt="">
+            <h3>Фастфуд</h3>
+            </div>
+            <div class="item_homefood item yellow ">
+                <img class="item_img" src="https://dm-kuhnya.com.ua/wp-content/uploads/2018/05/obid-min-1.jpg" alt="">
+                <h3>Домашня їжа</h3>
+
+            </div>
+            <div class="item_drink item brown">
+                <img class="item_img" src="https://www.fodors.com/wp-content/uploads/2019/03/HERO_Worlds_Best_Soda_Bundaberg_shutterstock_679079920.jpg" alt="">
+                <h3>Напої</h3>
+
+            </div>
+
+           </section>
+
+           <h1>Фастфуд</h1>
+           <section class="all_items">
+           
+
+            <div class="item_fastfood item orange">
+                <h3>Піца</h3>
+            <img class="item_img" src="https://pizza.od.ua/upload/resize_cache/webp/iblock/62e/4y05ehhgm88eupox5eh111jo1k2e94mq.webp" alt="">
+            <h3>Ціна:350грн</h3>
+            <button class="btn_buy" onclick="addToCart('Піца', 350)">Buy</button>
+
+
+            </div>
+            <div class="item_homefood item orange">
+                <h3>Бургер</h3>
+                <img class="item_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1usuDM1-Sd7Lf9jOIxwXDtunTsiMdarlvAA&s" alt="">
+                <h3>Ціна:120грн</h3>
+                <button class="btn_buy" onclick="addToCart('Бургер', 120)">Buy</button>
+
+
+            </div>
+            <div class="item_drink item orange">
+                <h3>Картопля Фрі</h3>
+                <img class="item_img" src="https://eclair.com.ua/wp-content/uploads/satj.jpg" alt="">
+                <h3>Ціна:100грн</h3>
+                <button class="btn_buy" onclick="addToCart('Картопля Фрі', 100)">Buy</button>
+
+            </section>
+                <h1>Домашня їжа</h1>
+                <section class="all_items">
+           
+                    <div class="item_homefood item yellow">
+                        <h3>Котлета Portion куряча з гречкою</h3>
+                    <img class="item_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8xjWKJM6vc9n-xbDUpne1doA47CP78U_89w&s" alt="">
+                    <h3>Ціна:70грн</h3>
+                    <button class="btn_buy" onclick="addToCart('Котлета Portion куряча з гречкою', 70)">Buy</button>
+       
+                    </div>
+                    <div class="item_homefood item yellow">
+                        <h3>Паста з куркою</h3>
+                        <img class="item_img" src="https://cooker.net.ua/upload/iblock/be7/pasta_z_kurkoyu_ta_gribami_400g_3273.jpg" alt="">
+                        <h3>Ціна:50грн</h3>
+                        <button class="btn_buy" onclick="addToCart('Паста з куркою', 50)">Buy</button>
+                    </div>
+                    <div class="item_homefood item yellow">
+                        <h3>Пюре з котлетою</h3>
+                        <img class="item_img" src="https://cooker.net.ua/upload/iblock/470/kartoplyane_pyure_z_kotletoyu_po_kiivski_400g_3269.jpg" alt="">
+                        <h3>Ціна:60грн</h3>
+                        <button class="btn_buy" onclick="addToCart('Пюре з котлетою', 60)">Buy</button>
+</div>
+                        <div class="item_homefood item yellow">
+                            <h3>Плов зі свининою</h3>
+                            <img class="item_img" src="https://cooker.net.ua/upload/iblock/065/plov_zi_svininoyu_kastrulka_220g_2311.jpg" alt="">
+                            <h3>Ціна:70грн</h3>
+                            <button class="btn_buy" onclick="addToCart('Плов зі свининою', 70)">Buy</button>
+
+
+                        </div>
+
+
+
+
+                        <div class="item_drink item yellow">
+                            <h3>М’ясна лазанья з сиром</h3>
+                            <img class="item_img" src="https://cooker.net.ua/upload/iblock/d38/m_yasna_lazanya_z_sirom_400g_3270.jpg" alt="">
+                            <h3>Ціна:50грн</h3>
+                            <button class="btn_buy" onclick="addToCart('М’ясна лазанья з сиром', 50)">Buy</button>
+                        </div>
+
+                    </section>
+                    <h1>Напої</h1>
+
+
+                    <section class="all_items">
+               
+                        <div class="item_drink item brown">
+                            <h3>Кока-Кола</h3>
+                        <img class="item_img" src="https://www.coca-cola.com/content/dam/onexp/by/be/brands/coca-cola/by_coca-cola_prod_classic_750x750_v2.jpg" alt="">
+                        <h3>Ціна:30грн</h3>
+                        <button class="btn_buy" onclick="addToCart('Кока-Кола', 30)">Buy</button>
+                        </div>
+                        <div class="item_drink item brown">
+                            <h3>Спрайт</h3>
+                            <img class="item_img" src="https://content.okwine.ua/files/product/61b345346ebb0c2d53db5d52/350x470/3e0a5f45-f3d7-4580-b4f3-bdc4d5c207c5.sprite-pet-0-5l.jpg" alt="">
+                            <h3>Ціна:20грн</h3>
+                            <button class="btn_buy" onclick="addToCart('Спрайт', 20)">Buy</button>
+                        </div>
+                        <div class="item_drink item brown">
+                            <h3>Пепсі</h3>
+                            <img class="item_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScMzJt5GOhs0zonx1ClRsLXZoDkstT8fBCjA&s" alt="">
+                            <h3>Ціна:40грн</h3>
+                            <button class="btn_buy" onclick="addToCart('Пепсі', 40)">Buy</button>
+                           </div>
+                            <div class="item_drink item brown">
+                                <h3>Фанта</h3>
+                                <img class="item_img" src="https://icf.listex.info/med/d4c65da4-05dd-be43-29d4-d220f8c441f6.jpg" alt="">
+                                <h3>Ціна:35грн</h3>
+                                <button class="btn_buy" onclick="addToCart('Фанта', 35)">Buy</button>
+
+
+  </div>
+                                <div class="item_drink item brown">
+                                    <h3>Сік</h3>
+                                    <img class="item_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ew_8kTioFB84flCZJOy5u5O43bxaaydAfw&s" alt="">
+                                    <h3>Ціна:45грн</h3>
+                                    <button class="btn_buy" onclick="addToCart('Сік', 45)">Buy</button>
+                                </div>
+
+                                    <div class="item_drink item brown">
+                                        <h3>Квас</h3>
+                                        <img class="item_img" src="https://produkty24.com.ua/db_pic/products/original/img_1145276_[1575559935.6531].jpg" alt="">
+                                        <h3>Ціна:50грн</h3>
+                                        <button class="btn_buy" onclick="addToCart('Квас', 50)">Buy</button>
+                                    </div>
+       
+
+           </section>
+
+<!-- Знижка -->
+     <div class="discount">
+
+        <a href="#">
+        <img class="discount_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEHFu1IN6nxgpeOu3TpXvTXsQtx85qUBsDaw&s" alt=""></a>
+
+     </div>
+        </main>
+
+<!-- Підвал -->
+        <footer>
+                 
+                <div class="footer_contact">
+            <h3>2024 Компанія <span> FoodEch. </span>Всі права захищені.</h3>
+            <h3>Контактна інформація: FoodEch@email.com</h3>
+            <h3>Соціальні мережі:</h3>
+               
+                <a href="#">Instagram</a>
+            </div>
+ 
+                <div class="aadress_block">
+            <p class="address"> <span> Адреса: </span> вул. Булгакова, б. 10, м. Київ, Україна</p>
+            <p class="address"><span> Адреса: </span>вул. Вишняковська, б. 15, м. Київ, Україна</p>
+            <p class="address"><span> Адреса: </span> вул. Північна, б. 18, м. Київ, Україна</p>
+            </p>
+        </div>      
+     
+        </footer>
+
+ </div>
+</div>
+<!-- Підключаємо бібліотеку анімації anime -->
+
+<script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>
+<!-- Підключаємо JS файл до html -->
+<script src="./script.js"></script>
+
+</body>
+</html>
