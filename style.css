@@ -1,0 +1,208 @@
+body{
+    background-color: #826161;
+    width: 100%;
+}
+.container{
+    width: 1600px;
+    margin: 10px auto;
+    opacity: 0.9;
+}
+/* Стилі шапки */
+header{
+    background-color: #db9f9f;
+    width: 1500px;
+    height: 195px;
+    margin: 0 auto;
+    font-size: 25px;
+    padding: 20px;
+    }
+/* Стилі кнопок шапки */
+.header_buttons{
+    display: flex;
+    width: 680px;
+    height: 125px;
+   }
+   
+.header_buttons a{
+    text-decoration: none;
+    margin-left: 50px;
+    width: 190px;
+    height: 50px;
+    font-size: 25px;
+    background-color: rgb(60, 60, 193);
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стилізуємо логотип */
+.logo_main{
+    float: left;
+}
+
+.basket_img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+
+.logo_right{
+    width: 700px;
+    height: 125px;
+    background-color: #db9f9f;
+    margin-left: 50px;
+}
+.slogo h3{
+    margin-left: 50px;
+    position: relative;
+    top: -45px;
+    }
+
+.logo_img{
+    display: block;
+    position: relative;
+    top: -25px;
+   
+}
+
+.slogo{
+    margin-left: 50px;
+    position: relative;
+    top:-5px
+}
+.log0{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Стилі основого контейнера */
+main{
+background-color: #FFFFFF;
+width: 1500px;
+min-height: 325px;
+margin: 0 auto;
+}
+/* Границі карток за кольорами */
+.yellow{
+    border: 6px solid rgb(102, 125, 55);
+    }
+.orange{
+    border: 6px solid orange;
+    }
+.brown{
+    border: 6px solid brown;
+    }
+main h1, h2{
+    text-align: center;
+    padding: 10px;
+}
+.all_items{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.item{
+    width:250px;
+    min-height:250px;
+    background-color: #826161;
+    margin: 10px auto;
+    justify-content: center;
+    margin-left: 20px;
+    text-align: center;
+}
+.item:hover{
+    opacity: .8;
+    border: 12px double blueviolet;
+}
+
+
+.all_items img{
+    display: block;
+    padding: 20px;
+}
+
+
+.btn_buy{
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: black;
+    color: bisque;
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+.all_items img{
+    width: 150px;
+    height: 140px;
+    margin: 0 auto;
+    display: block;
+
+
+
+
+}
+
+/* 
+Підвал сайту
+ */
+
+
+footer{
+    width: 91.5%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+     display: flex;
+     justify-content: space-between;
+     margin: 0 auto;
+    
+}
+footer a {
+    color: greenyellow;
+    text-decoration: none;
+    margin: 0 10px;
+}
+span{
+    color: rgb(95, 95, 238);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* Стилізуємо знижку */
+.discount_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+}
+.discount{
+    width: 100px;
+    height: 100px;
+    border: 5px solid greenyellow;
+    border-radius: 50%;
+    box-shadow: 5px 5px  rgb(66, 47, 47);
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+}
+.discount:hover{
+    transition: .1s ease;
+    border: 5px solid greenyellow;
+    cursor: pointer;
+    box-shadow: 15px 15px  rgb(66, 47, 47);
+    opacity: .8;
+}
